@@ -1,0 +1,48 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Checkout{% endblock title %}
+{% block main-content %}
+<div class="container">
+ <div class="row mt-5">
+  <div class="col-sm-6">
+    <h4>Order Summary</h4>
+    <hr>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5>Product: Beautiful Designer Dress</h5>
+          <p>Quantity: 1</p>
+          <h5>Product: Designer Party Gown</h5>
+          <p>Quantity: 1</p>
+          <p class="fw-bold">Price:3800.00</p>
+        </div>
+      </div>
+    <small>Term and Condition: If there is any issues with your product, you can raise a refund or replacement request within 10 days of receiving the product.
+           Successful pick-up of the product is subject to the following conditions being met:
+           Correct and complete product (with the original brand, article number, undetached MRP tag, product's original packaging, freebies and accessories)
+           The product should be in unused, undamaged and original condition without any stains, scratches, tears or holes
+           Know more about the Return Policy <a href="https://ecommerceguide.com/guides/ecommerce-terms-conditions/">here</a></small>
+  </div>
+  <div class="col-sm-4 offset-sm-1">
+    <h4>Select Shipping Address</h4>
+    <hr>
+    <form action="">
+      <div class="card">
+        <div class="card-body">
+        <h5>Ayushi Chaurasia</h5>
+        <p>Sasaram,
+           Rohtas-821115,Bihar</p>
+        </div>
+      </div>
+        <div class="form-check mt-2 mb-5">
+          <input class="form-check-input" type="radio" value="">
+          <label class="form-check-label fw-bold" for="">
+            Address: 1 </label>
+        </div>
+        <div class="text-end">
+          <button type="submit" class="btn btn-warning mt-3 px-5 fw-bold">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock main-content %}
